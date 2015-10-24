@@ -17,7 +17,7 @@ class Validate
 
 	isString: (type) ->
 		return @ unless @result
-		@result = no unless typeof @value is 'string'
+		@result = no if typeof @value isnt 'string'
 		@
 
 	notEmpty: ->
@@ -88,8 +88,18 @@ class Validate
 
 	isNumber: (type) ->
 		return @ unless @result
-		@result = no unless typeof @value is 'number'
+		@result = no if typeof @value isnt 'number'
 		@
+
+
+
+	##### validation for booleans #####
+
+	isBool: ->
+		return @ unless @result
+		@result = no if typeof @value isnt 'boolean'
+		@
+
 
 
 	end: -> @result
