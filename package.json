@@ -1,6 +1,6 @@
 {
   "name": "valuedate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Small library for validation",
   "main": "index.js",
   "devDependencies": {
